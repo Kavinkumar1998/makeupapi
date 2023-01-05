@@ -33,7 +33,7 @@ var searching= document.querySelector(".input").value.toUpperCase();
 var allboxes= document.querySelectorAll(".row");
 var ProductTypes= document.getElementsByTagName("b");
 for(var i=0;i<ProductTypes.length;i++){
-    var matchingProduct= ProductTypes[i].outerText;
+    var matchingProduct= ProductTypes[i].innerText;
     if(matchingProduct.toUpperCase().indexOf(searching)>-1){
         allboxes[i].style.display="";
 
